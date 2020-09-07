@@ -9,7 +9,6 @@ from blog.models import Article
 
 data_path = r'E:\PythonProject\djago_introduction\data\artcle'
 
-
 def main():
     content_list = []
     files = os.listdir(data_path)
