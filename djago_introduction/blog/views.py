@@ -24,3 +24,11 @@ def get_index_page(request):
                       'artcle_list':all_artcle
                   }
                   )
+
+def get_detail_page(request):
+    curr_artcle = Article.objects.all()[0]
+    return render(request,'blog/detail.html',
+                  {
+                      'curr_artcle':curr_artcle
+                  }
+                  )
